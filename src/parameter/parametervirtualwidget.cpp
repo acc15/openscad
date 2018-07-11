@@ -76,7 +76,7 @@ void ParameterVirtualWidget::setDescription(const QString& description) {
 	}
 }
 	
-void ParameterVirtualWidget::resizeEvent(QResizeEvent * event){
+void ParameterVirtualWidget::resizeEvent(QResizeEvent * /*event*/){
 	//bodge code to adjust the label height, when the label has to use multiple lines
 	static int prevLabelWidth(0);
 	QLabel* label = this->labelDescription;

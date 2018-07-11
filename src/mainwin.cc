@@ -1139,7 +1139,7 @@ void MainWindow::instantiateRoot()
 	Generates CSG tree for OpenCSG evaluation.
 	Assumes that the design has been parsed and evaluated (this->root_node is set)
 */
-void MainWindow::compileCSG(bool procevents)
+void MainWindow::compileCSG(bool /*procevents*/)
 {
 	assert(this->root_node);
 	PRINT("Compiling design (CSG Products generation)...");
