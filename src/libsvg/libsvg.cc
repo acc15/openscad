@@ -79,6 +79,8 @@ void processNode(xmlTextReaderPtr reader)
 	if (!isEmpty) {
 		break;
 	}
+    // fall-thru
+    // GCC marker comment
 	case XML_READER_TYPE_END_ELEMENT:
 	{
 		if (std::string("defs") == name) {
