@@ -483,7 +483,7 @@ int tessMeshRefineDelaunay( TESSmesh *mesh, TESSalloc *alloc )
 		e->mark = e->Sym->mark = 0;
 		if (!tesedgeIsLocallyDelaunay(e)) {
 			int i;
-			tessMeshFlipEdge(mesh, e);
+            tessMeshFlipEdge(e);
 			// for each opposite edge
 			edges[0] = e->Lnext;
 			edges[1] = e->Lprev;
